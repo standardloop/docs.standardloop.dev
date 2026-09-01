@@ -1,0 +1,23 @@
+---
+version: "3"
+
+tasks:
+  default: task --list-all
+
+  build:
+    deps:
+      - clean
+    cmds:
+      - zensical build --clean
+
+  run:
+    aliases: [serve, server]
+    deps:
+      - build
+    cmds:
+      - zensical serve
+
+  clean:
+    cmds:
+      - rm -rf ./.cache
+      # - rm -rf ./.venv
