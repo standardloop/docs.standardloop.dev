@@ -1,10 +1,10 @@
-# standardloop.dev
+# docs.standardloop.dev
 
-[![GitHub Release](https://img.shields.io/github/v/release/standardloop/standardloop.dev?sort=semver)](https://github.com/standardloop/standardloop.dev/releases) ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+[![GitHub Release](https://img.shields.io/github/v/release/standardloop/standardloop.dev?sort=semver)](https://github.com/standardloop/docs.standardloop.dev/releases) ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 ---
 
-- [https://github.com/standardloop/standardloop.dev](https://github.com/standardloop/standardloop.dev)
-- [https://www.standardloop.dev/](https://www.standardloop.dev/)
+- [https://github.com/standardloop/docs.standardloop.dev](https://github.com/standardloop/docs.standardloop.dev)
+- [https://docs.standardloop.dev/](https://docs.standardloop.dev/)
 
 ## About
 
