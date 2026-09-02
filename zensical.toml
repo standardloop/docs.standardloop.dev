@@ -36,7 +36,6 @@ Copyright &copy; 2026 StandardLoop
 
 nav = [
     { "Home" = "index.md" },
-    { "About" = "about.md" },
     { "Articles" = [
         { "Kind" = [
             "tech-articles/kind/intro-to-kind.md",
@@ -76,6 +75,7 @@ nav = [
         ] },
         { "Misc" = [
             "personal-projects/misc/docs.standardloop.dev.md",
+            "personal-projects/misc/www.standardloop.dev.md",
             "personal-projects/misc/knowledge-transfer.md",
         ] },
     ] },
@@ -135,6 +135,7 @@ custom_dir = "overrides"
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
+favicon = "images/favicon.png"
 # favicon = "lucide/infinity"
 
 # Zensical supports more than 60 different languages. This means that the
@@ -341,7 +342,7 @@ accent = "green"
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
 [project.theme.icon]
-logo = "lucide/code-xml"
+logo = "lucide/square-terminal"
 #repo = "lucide/smile"
 
 # ----------------------------------------------------------------------------

@@ -8,13 +8,13 @@
 
 ## About
 
-My Personal Website — essentially a personal documentation website.
+My personal documentation website.
 
 Made with [zensical](https://github.com/zensical/zensical).
 
 See my Tech Articles, my Personal Projects, and my Open Source Contributions!
 
-## Run
+## Running
 
 ```sh
 $ uv venv
@@ -22,3 +22,9 @@ $ source .venv/bin/activate
 $ uv sync --upgrade
 $ task serve
 ```
+
+## Deploying
+
+This repo is deployed to GitHub Pages.
+
+Tags will release a new version.
