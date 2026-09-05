@@ -14,6 +14,8 @@ Made with [zensical](https://github.com/zensical/zensical).
 
 See my Tech Articles, my Personal Projects, and my Open Source Contributions!
 
+![alt text](https://raw.githubusercontent.com/standardloop/docs.standardloop.dev/refs/heads/main/readme/images/screenshot.png)
+
 ## Running
 
 ```sh
