@@ -35,51 +35,67 @@ Copyright &copy; 2026 StandardLoop
 """
 
 nav = [
-    { "Home" = "index.md" },
-    { "Articles" = [
-        { "Kind" = [
-            "tech-articles/kind/intro-to-kind.md",
-            "tech-articles/kind/kind-gateway-api.md",
-        ] },
-        { "Taskfile" = [
-            "tech-articles/taskfile/rancher.md",
-            "tech-articles/taskfile/multicluster-kind.md",
-            "tech-articles/taskfile/helm.md",
-        ] },
-        { "C" = [
-            "tech-articles/c/dylib-on-macos.md",
-            "tech-articles/c/macos-catch-c-memory-issues.md",
-        ] },
-        { "Config" = [
-            "tech-articles/config/oh-my-zsh-to-starship.md",
-        ] },
+  { "Home" = "index.md" },
+  { "Projects" = [
+    { "C Libraries" = [
+      { "c-json" = [
+        { "Overview" = "projects/c/libraries/c-json/index.md" },
+        { "Docs" = "projects/c/libraries/c-json/docs.md" },
+      ] },
+      { "c-util" = [
+        { "Overview" = "projects/c/libraries/c-util/index.md" },
+        { "Docs" = "projects/c/libraries/c-util/docs.md" },
+      ] },
+      { "c-logger" = [
+        { "Overview" = "projects/c/libraries/c-logger/index.md" },
+        { "Docs" = "projects/c/libraries/c-logger/docs.md" },
+      ] },
+      { "c-collections" = [
+        { "Overview" = "projects/c/libraries/c-collections/index.md" },
+        { "Docs" = "projects/c/libraries/c-collections/docs.md" },
+      ] },
+      { "c-template" = [
+        { "Overview" = "projects/c/libraries/c-template/index.md" },
+      ] },
     ] },
-    { "Personal Projects" = [
-        { "C" = [
-            "personal-projects/c/c-json.md",
-            "personal-projects/c/cerver.md",
-            "personal-projects/c/seashell.md",
-            "personal-projects/c/do.md",
-            "personal-projects/c/c-util.md",
-            "personal-projects/c/c-logger.md",
-            "personal-projects/c/c-collections.md",
-            "personal-projects/c/c-template.md",
-        ] },
-        { "SRE" = [
-            "personal-projects/sre/playground.md",
-            "personal-projects/sre/taskfiles.md",
-        ] },
-        { "JS" = [
-            "personal-projects/js/castlewars.md",
-            "personal-projects/js/life.md",
-        ] },
-        { "Misc" = [
-            "personal-projects/misc/docs.standardloop.dev.md",
-            "personal-projects/misc/www.standardloop.dev.md",
-            "personal-projects/misc/knowledge-transfer.md",
-        ] },
+    { "C Projects" = [
+      "projects/c/projects/cerver.md",
+      "projects/c/projects/seashell.md",
+      "projects/c/projects/do.md",
     ] },
-    { "Open Source Contributions" = "opensource-contributions/index.md" },
+    { "SRE" = [
+      "projects/sre/playground.md",
+      "projects/sre/taskfiles.md",
+    ] },
+    { "JS" = [
+      "projects/js/castlewars.md",
+      "projects/js/life.md",
+      "projects/js/www.standardloop.dev.md",
+    ] },
+    { "Misc" = [
+      "projects/misc/docs.standardloop.dev.md",
+      "projects/misc/knowledge-transfer.md",
+    ] },
+  ] },
+  { "Articles" = [
+    { "Kind" = [
+      "tech-articles/kind/intro-to-kind.md",
+      "tech-articles/kind/kind-gateway-api.md",
+    ] },
+    { "Taskfile" = [
+      "tech-articles/taskfile/rancher.md",
+      "tech-articles/taskfile/multicluster-kind.md",
+      "tech-articles/taskfile/helm.md",
+    ] },
+    { "C" = [
+      "tech-articles/c/dylib-on-macos.md",
+      "tech-articles/c/macos-catch-c-memory-issues.md",
+    ] },
+    { "Config" = [
+      "tech-articles/config/oh-my-zsh-to-starship.md",
+    ] },
+  ] },
+  { "Open Source Contributions" = "opensource-contributions/index.md" },
 ]
 # { "Hire Me" = "hire-me.md" },
 
@@ -156,139 +172,140 @@ language = "en"
 # Zensical provides a number of feature toggles that change the behavior
 # of the documentation site.
 features = [
-    # Zensical includes an announcement bar. This feature allows users to
-    # dismiss it then they have read the announcement.
-    # https://zensical.org/docs/setup/header/#announcement-bar
-    "announce.dismiss",
+  # Zensical includes an announcement bar. This feature allows users to
+  # dismiss it then they have read the announcement.
+  # https://zensical.org/docs/setup/header/#announcement-bar
+  "announce.dismiss",
 
-    # If you have a repository configured and turn feature this on, Zensical
-    # will generate an edit button for the page. This works for common
-    # repository hosting services.
-    # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.edit",
+  # If you have a repository configured and turn feature this on, Zensical
+  # will generate an edit button for the page. This works for common
+  # repository hosting services.
+  # https://zensical.org/docs/setup/repository/#code-actions
+  #"content.action.edit",
 
-    # If you have a repository configured and turn feature this on, Zensical
-    # will generate a button that allows the user to view the Markdown
-    # code for the current page.
-    # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.view",
+  # If you have a repository configured and turn feature this on, Zensical
+  # will generate a button that allows the user to view the Markdown
+  # code for the current page.
+  # https://zensical.org/docs/setup/repository/#code-actions
+  #"content.action.view",
 
-    # Code annotations allow you to add an icon with a tooltip to your
-    # code blocks to provide explanations at crucial points.
-    # https://zensical.org/docs/authoring/code-blocks/#code-annotations
-    "content.code.annotate",
+  # Code annotations allow you to add an icon with a tooltip to your
+  # code blocks to provide explanations at crucial points.
+  # https://zensical.org/docs/authoring/code-blocks/#code-annotations
+  "content.code.annotate",
 
-    # This feature turns on a button in code blocks that allow users to
-    # copy the content to their clipboard without first selecting it.
-    # https://zensical.org/docs/authoring/code-blocks/#code-copy-button
-    "content.code.copy",
+  # This feature turns on a button in code blocks that allow users to
+  # copy the content to their clipboard without first selecting it.
+  # https://zensical.org/docs/authoring/code-blocks/#code-copy-button
+  "content.code.copy",
 
-    # Code blocks can include a button to allow for the selection of line
-    # ranges by the user.
-    # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
-    "content.code.select",
+  # Code blocks can include a button to allow for the selection of line
+  # ranges by the user.
+  # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
+  "content.code.select",
 
-    # Zensical can render footnotes as inline tooltips, so the user can read
-    # the footnote without leaving the context of the document.
-    # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
-    "content.footnote.tooltips",
+  # Zensical can render footnotes as inline tooltips, so the user can read
+  # the footnote without leaving the context of the document.
+  # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
+  "content.footnote.tooltips",
 
-    # If you have many content tabs that have the same titles (e.g., "Python",
-    # "JavaScript", "Cobol"), this feature causes all of them to switch to
-    # at the same time when the user chooses their language in one.
-    # https://zensical.org/docs/authoring/content-tabs/#linked-content-tabs
-    "content.tabs.link",
+  # If you have many content tabs that have the same titles (e.g., "Python",
+  # "JavaScript", "Cobol"), this feature causes all of them to switch to
+  # at the same time when the user chooses their language in one.
+  # https://zensical.org/docs/authoring/content-tabs/#linked-content-tabs
+  "content.tabs.link",
 
-    # TODO: not sure I understand this one? Is there a demo of this in the docs?
-    # https://zensical.org/docs/authoring/tooltips/#improved-tooltips
-    "content.tooltips",
+  # TODO: not sure I understand this one? Is there a demo of this in the docs?
+  # https://zensical.org/docs/authoring/tooltips/#improved-tooltips
+  "content.tooltips",
 
-    # With this feature enabled, Zensical will automatically hide parts
-    # of the header when the user scrolls past a certain point.
-    # https://zensical.org/docs/setup/header/#automatic-hiding
-    "header.autohide",
+  # With this feature enabled, Zensical will automatically hide parts
+  # of the header when the user scrolls past a certain point.
+  # https://zensical.org/docs/setup/header/#automatic-hiding
+  "header.autohide",
 
-    # Turn on this feature to expand all collapsible sections in the
-    # navigation sidebar by default.
-    # https://zensical.org/docs/setup/navigation/#navigation-expansion
-    "navigation.expand",
+  # Turn on this feature to expand all collapsible sections in the
+  # navigation sidebar by default.
+  # https://zensical.org/docs/setup/navigation/#navigation-expansion
 
-    # This feature turns on navigation elements in the footer that allow the
-    # user to navigate to a next or previous page.
-    # https://zensical.org/docs/setup/footer/#navigation
-    "navigation.footer",
+  "navigation.expand",
 
-    # When section index pages are enabled, documents can be directly attached
-    # to sections, which is particularly useful for providing overview pages.
-    # https://zensical.org/docs/setup/navigation/#section-index-pages
-    "navigation.indexes",
+  # This feature turns on navigation elements in the footer that allow the
+  # user to navigate to a next or previous page.
+  # https://zensical.org/docs/setup/footer/#navigation
+  "navigation.footer",
 
-    # When instant navigation is enabled, clicks on all internal links will be
-    # intercepted and dispatched via XHR without fully reloading the page.
-    # https://zensical.org/docs/setup/navigation/#instant-navigation
-    "navigation.instant",
+  # When section index pages are enabled, documents can be directly attached
+  # to sections, which is particularly useful for providing overview pages.
+  # https://zensical.org/docs/setup/navigation/#section-index-pages
+  "navigation.indexes",
 
-    # With instant prefetching, your site will start to fetch a page once the
-    # user hovers over a link. This will reduce the perceived loading time
-    # for the user.
-    # https://zensical.org/docs/setup/navigation/#instant-prefetching
-    "navigation.instant.prefetch",
+  # When instant navigation is enabled, clicks on all internal links will be
+  # intercepted and dispatched via XHR without fully reloading the page.
+  # https://zensical.org/docs/setup/navigation/#instant-navigation
+  "navigation.instant",
 
-    # In order to provide a better user experience on slow connections when
-    # using instant navigation, a progress indicator can be enabled.
-    # https://zensical.org/docs/setup/navigation/#progress-indicator
-    #"navigation.instant.progress",
+  # With instant prefetching, your site will start to fetch a page once the
+  # user hovers over a link. This will reduce the perceived loading time
+  # for the user.
+  # https://zensical.org/docs/setup/navigation/#instant-prefetching
+  "navigation.instant.prefetch",
 
-    # When navigation paths are activated, a breadcrumb navigation is rendered
-    # above the title of each page
-    # https://zensical.org/docs/setup/navigation/#navigation-path
-    "navigation.path",
+  # In order to provide a better user experience on slow connections when
+  # using instant navigation, a progress indicator can be enabled.
+  # https://zensical.org/docs/setup/navigation/#progress-indicator
+  #"navigation.instant.progress",
 
-    # When pruning is enabled, only the visible navigation items are included
-    # in the rendered HTML, reducing the size of the built site by 33% or more.
-    # https://zensical.org/docs/setup/navigation/#navigation-pruning
-    # "navigation.prune",
+  # When navigation paths are activated, a breadcrumb navigation is rendered
+  # above the title of each page
+  # https://zensical.org/docs/setup/navigation/#navigation-path
+  "navigation.path",
 
-    # When sections are enabled, top-level sections are rendered as groups in
-    # the sidebar for viewports above 1220px, but remain as-is on mobile.
-    # https://zensical.org/docs/setup/navigation/#navigation-sections
-    # "navigation.sections",
+  # When pruning is enabled, only the visible navigation items are included
+  # in the rendered HTML, reducing the size of the built site by 33% or more.
+  # https://zensical.org/docs/setup/navigation/#navigation-pruning
+  # "navigation.prune",
 
-    # When tabs are enabled, top-level sections are rendered in a menu layer
-    # below the header for viewports above 1220px, but remain as-is on mobile.
-    # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    "navigation.tabs",
+  # When sections are enabled, top-level sections are rendered as groups in
+  # the sidebar for viewports above 1220px, but remain as-is on mobile.
+  # https://zensical.org/docs/setup/navigation/#navigation-sections
+  # "navigation.sections",
 
-    # When sticky tabs are enabled, navigation tabs will lock below the header
-    # and always remain visible when scrolling down.
-    # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    "navigation.tabs.sticky",
+  # When tabs are enabled, top-level sections are rendered in a menu layer
+  # below the header for viewports above 1220px, but remain as-is on mobile.
+  # https://zensical.org/docs/setup/navigation/#navigation-tabs
+  "navigation.tabs",
 
-    # A back-to-top button can be shown when the user, after scrolling down,
-    # starts to scroll up again.
-    # https://zensical.org/docs/setup/navigation/#back-to-top-button
-    "navigation.top",
+  # When sticky tabs are enabled, navigation tabs will lock below the header
+  # and always remain visible when scrolling down.
+  # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
+  "navigation.tabs.sticky",
 
-    # When anchor tracking is enabled, the URL in the address bar is
-    # automatically updated with the active anchor as highlighted in the table
-    # of contents.
-    # https://zensical.org/docs/setup/navigation/#anchor-tracking
-    "navigation.tracking",
+  # A back-to-top button can be shown when the user, after scrolling down,
+  # starts to scroll up again.
+  # https://zensical.org/docs/setup/navigation/#back-to-top-button
+  "navigation.top",
 
-    # When search highlighting is enabled and a user clicks on a search result,
-    # Zensical will highlight all occurrences after following the link.
-    # https://zensical.org/docs/setup/search/#search-highlighting
-    "search.highlight",
+  # When anchor tracking is enabled, the URL in the address bar is
+  # automatically updated with the active anchor as highlighted in the table
+  # of contents.
+  # https://zensical.org/docs/setup/navigation/#anchor-tracking
+  "navigation.tracking",
 
-    # When anchor following for the table of contents is enabled, the sidebar
-    # is automatically scrolled so that the active anchor is always visible.
-    # https://zensical.org/docs/setup/navigation/#anchor-following
-    # "toc.follow",
+  # When search highlighting is enabled and a user clicks on a search result,
+  # Zensical will highlight all occurrences after following the link.
+  # https://zensical.org/docs/setup/search/#search-highlighting
+  "search.highlight",
 
-    # When navigation integration for the table of contents is enabled, it is
-    # always rendered as part of the navigation sidebar on the left.
-    # https://zensical.org/docs/setup/navigation/#navigation-integration
-    # "toc.integrate",
+  # When anchor following for the table of contents is enabled, the sidebar
+  # is automatically scrolled so that the active anchor is always visible.
+  # https://zensical.org/docs/setup/navigation/#anchor-following
+  # "toc.follow",
+
+  # When navigation integration for the table of contents is enabled, it is
+  # always rendered as part of the navigation sidebar on the left.
+  # https://zensical.org/docs/setup/navigation/#navigation-integration
+  # "toc.integrate",
 ]
 
 # ----------------------------------------------------------------------------

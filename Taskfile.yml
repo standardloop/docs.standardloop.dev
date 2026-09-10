@@ -21,3 +21,5 @@ tasks:
     cmds:
       - rm -rf ./.cache
       # - rm -rf ./.venv
+
+  fmt: taplo format zensical.toml
