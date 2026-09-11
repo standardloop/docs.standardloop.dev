@@ -2,6 +2,4 @@
 icon: lucide/book-open
 ---
 
-# hi
-
-## testing
+--8<-- "https://raw.githubusercontent.com/standardloop/c-logger/refs/heads/main/docs/index.md"
