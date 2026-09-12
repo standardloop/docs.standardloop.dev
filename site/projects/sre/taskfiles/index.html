@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="zensical-0.0.60">
+      <meta name="generator" content="zensical-0.0.61">
     
     
       
@@ -1528,6 +1528,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        C
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2599,6 +2610,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        C
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2784,20 +2806,20 @@
 <h2 id="color">Color</h2>
 <p>This Taskfile is for sharing variables that allow for settings text color.</p>
 <p>There is one task, but is just for testing that variables.</p>
-<p><div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>task<span class="w"> </span>--taskfile<span class="w"> </span>color.yml<span class="w"> </span>--list-all
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>task<span class="w"> </span>--taskfile<span class="w"> </span>color.yml<span class="w"> </span>--list-all
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>task:<span class="w"> </span>Available<span class="w"> </span>tasks<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>project:
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>*<span class="w"> </span>default:<span class="w">             </span><span class="o">(</span>aliases:<span class="w"> </span>all<span class="o">)</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>*<span class="w"> </span>test:<span class="w">          </span>Prints<span class="w"> </span>out<span class="w"> </span>all<span class="w"> </span>the<span class="w"> </span>colors<span class="w"> </span>avaiable.
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>$<span class="w"> </span>task<span class="w"> </span>--taskfile<span class="w"> </span>color.yml
 </span></code></pre></div>
-<img alt="alt text" src="https://raw.githubusercontent.com/standardloop/taskfiles/refs/heads/main/docs/color.png" /></p>
+<p><img alt="alt text" src="https://raw.githubusercontent.com/standardloop/taskfiles/refs/heads/main/docs/color.png" /></p>
 <h3 id="using-in-your-taskfile">Using in your Taskfile</h3>
 <p>When you include this Taskfile you have access to all the color variables.</p>
 <p>In general, you will use it like this:</p>
 <p><code>{{.TEXT_YOUR_CHOICE_HERE}} your message here {{.TEXT_RESET}}</code></p>
-<p>Example:
+<p>Example:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nn">---</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">'3'</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">"3"</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nt">vars</span><span class="p">:</span>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">STANDARDLOOP_TASKFILES_VERSION</span><span class="p">:</span><span class="w"> </span><span class="s">"v0.0.6"</span>
@@ -2811,13 +2833,13 @@
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nt">cmds</span><span class="p">:</span>
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo "{{.TEXT_YELLOW}}waiting....{{.TEXT_RESET}}"</span>
 </span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo "{{.TEXT_GREEN}}DONE{{.TEXT_RESET}}"</span>
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h2 id="rancher">Rancher</h2>
 <p>This Taskfile contains tasks for spinning up <a href="https://github.com/rancher-sandbox/rancher-desktop/">rancher docker engine</a>.</p>
 <h3 id="using-in-your-taskfile_1">Using in your Taskfile</h3>
-<p>Example:
+<p>Example:</p>
 <div class="language-yml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nn">---</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">'3'</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">"3"</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nt">vars</span><span class="p">:</span>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">STANDARDLOOP_TASKFILES_VERSION</span><span class="p">:</span><span class="w"> </span><span class="s">"v0.0.6"</span>
@@ -2836,8 +2858,8 @@
 </span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rancher:start</span>
 </span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">        </span><span class="nt">vars</span><span class="p">:</span>
 </span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">          </span><span class="nt">FLAGS</span><span class="p">:</span><span class="w"> </span><span class="s">"--virtual-machine.number-cpus</span><span class="nv"> </span><span class="s">{{.DOCKER_ENGINE_CPUS}}</span><span class="nv"> </span><span class="s">--virtual-machine.memory-in-gb</span><span class="nv"> </span><span class="s">{{.DOCKER_ENGINE_MEMORY}}"</span>
-</span></code></pre></div></p>
-<p>Running:
+</span></code></pre></div>
+<p>Running:</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$<span class="w"> </span>task
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span><span class="w"> </span>About<span class="w"> </span>to<span class="w"> </span>launch<span class="w"> </span>/usr/bin/open<span class="w"> </span>-a<span class="w"> </span>/Applications/Rancher<span class="w"> </span>Desktop.app<span class="w"> </span>--args<span class="w"> </span>--application.startInBackground<span class="o">=</span><span class="nb">true</span><span class="w"> </span>--virtualMachine.memoryInGB<span class="w"> </span><span class="m">8</span><span class="w"> </span>--virtualMachine.numberCPUs<span class="w"> </span><span class="m">4</span><span class="w"> </span>...
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Waiting<span class="w"> </span><span class="k">for</span><span class="w"> </span>docker<span class="w"> </span>to<span class="w"> </span>come<span class="w"> </span>up...
@@ -2848,13 +2870,13 @@
 </span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
 </span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>$<span class="w"> </span>task<span class="w"> </span>clean
 </span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>Shutting<span class="w"> </span>down.
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h2 id="colima">Colima</h2>
 <p>This Taskfile contains tasks for spinning up <a href="https://github.com/abiosoft/colima">colima docker engine</a>.</p>
 <h3 id="using-in-your-taskfile_2">Using in your Taskfile</h3>
-<p>Example:
+<p>Example:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nn">---</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">'3'</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">"3"</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nt">vars</span><span class="p">:</span>
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nt">STANDARDLOOP_TASKFILES_VERSION</span><span class="p">:</span><span class="w"> </span><span class="s">"v0.0.6"</span>
@@ -2876,8 +2898,8 @@
 </span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">  </span><span class="nt">clean</span><span class="p">:</span>
 </span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">    </span><span class="nt">cmds</span><span class="p">:</span>
 </span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">colima:clean</span>
-</span></code></pre></div></p>
-<p>Running:
+</span></code></pre></div>
+<p>Running:</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>task
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span><span class="w"> </span>starting<span class="w"> </span>colima
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span><span class="w"> </span>runtime:<span class="w"> </span>docker
@@ -2890,7 +2912,9 @@
 </span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>are<span class="w"> </span>you<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>delete<span class="w"> </span>colima<span class="w"> </span>and<span class="w"> </span>all<span class="w"> </span>settings?<span class="w"> </span><span class="o">[</span>y/N<span class="o">]</span><span class="w"> </span>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span><span class="w"> </span>deleting<span class="w"> </span>colima
 </span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span><span class="w"> </span>deleting<span class="w"> </span>...<span class="w">                                  </span><span class="nv">context</span><span class="o">=</span>docker
 </span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span><span class="w"> </span><span class="k">done</span>
-</span></code></pre></div></p>
+</span></code></pre></div>
+<h2 id="c">C</h2>
+<p>Some reusable tasks for formating and generating docs.</p>
 
 
 
@@ -3036,10 +3060,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","header.autohide","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight"],"search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","header.autohide","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight"],"redirect":null,"search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.88ee1349.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.df5d1f2b.min.js"></script>
       
     
   </body>
