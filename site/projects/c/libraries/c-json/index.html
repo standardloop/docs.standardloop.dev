@@ -2344,10 +2344,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#to-build-and-run-a-test-lab-program" class="md-nav__link">
+  <a href="#to-build-a-test-program" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        To build and run a test (lab) program
+        To build a test program
       </span>
     </span>
   </a>
@@ -2360,10 +2360,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-as-a-dynamic-library" class="md-nav__link">
+  <a href="#checking-for-leaks" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Using as a dynamic library
+        Checking for Leaks
       </span>
     </span>
   </a>
@@ -2371,10 +2371,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#checking-for-leaks" class="md-nav__link">
+  <a href="#docs" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Checking for Leaks
+        Docs
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#precommit" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Precommit
       </span>
     </span>
   </a>
@@ -2665,21 +2676,20 @@
 <h3 id="to-see-all-avaiable">To see all avaiable</h3>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>task<span class="w"> </span>--list-all
 </span></code></pre></div>
-<h3 id="to-build-and-run-a-test-lab-program">To build and run a test (lab) program</h3>
+<h3 id="to-build-a-test-program">To build a test program</h3>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$<span class="w"> </span>task
-</span></code></pre></div>
-<h2 id="using-as-a-dynamic-library">Using as a dynamic library</h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$<span class="w"> </span>clang<span class="w"> </span>-Werror<span class="w"> </span>-Wextra<span class="w"> </span>-Wall<span class="w"> </span>-Wfree-nonheap-object<span class="w"> </span>-std<span class="o">=</span>c17<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span>lab.c<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span>-L/usr/local/lib/standardloop<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span>-lstandardloop-json<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span>-o<span class="w"> </span>lab
 </span></code></pre></div>
 <h2 id="checking-for-leaks">Checking for Leaks</h2>
 <ul>
 <li>The <code>taskfile</code> has a task to compile the code with address sanitizers.</li>
-<li>The <code>taskfile</code> has a task to run the program with macOS <code>leaks</code>.</li>
+<li>See <code>LEAKS.md</code></li>
 </ul>
+<h2 id="docs">Docs</h2>
+<p>Docs are generated a first generated with <code>doxygen</code> as <code>xml</code> and then <code>moxygen</code> reads the xml to output markdown in the <code>docs/</code> folder.</p>
+<p>This repo uses reusable tasks from https://github.com/standardloop/taskfiles/</p>
+<h2 id="precommit">Precommit</h2>
+<p>This repo uses <a href="https://github.com/j178/prek">prek</a>.</p>
+<p>Please run <code>prek install</code>.</p>
 
 
 

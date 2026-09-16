@@ -2271,6 +2271,73 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Building
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Dependencies
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-mise" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Using <code>mise</code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-brew-and-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Using <code>brew</code> and <code>npm</code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Docs
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#precommit" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2495,7 +2562,7 @@
 <h2 id="running">Running</h2>
 <p>This repo uses <a href="https://github.com/go-task/task">task</a>.</p>
 <p>Please run the default <code>task</code> to see all the avaiable <code>tasks</code></p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>task
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>task<span class="w"> </span>--list-all
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>task:<span class="w"> </span>Available<span class="w"> </span>tasks<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>project:
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>*<span class="w"> </span>default:<span class="w">                   </span>Show<span class="w"> </span>all<span class="w"> </span>avaiable<span class="w"> </span>tasks.
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>*<span class="w"> </span>test:<span class="w">                      </span>Build<span class="w"> </span>and<span class="w"> </span>Run<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
@@ -2507,6 +2574,32 @@
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>*<span class="w"> </span>test:leaks:<span class="w">                </span>Run<span class="w"> </span>macOS<span class="w"> </span>leaks<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>*<span class="w"> </span>test:run:<span class="w">                  </span>Run<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
 </span></code></pre></div>
+<h2 id="building">Building</h2>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>task<span class="w"> </span>test:build
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$<span class="w"> </span>./test
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>$<span class="w"> </span>task<span class="w"> </span>test:build-sanitize
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>$<span class="w"> </span>./test-sanitize
+</span></code></pre></div>
+<h3 id="dependencies">Dependencies</h3>
+<h4 id="using-mise">Using <code>mise</code></h4>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>mise<span class="w"> </span>install
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>$<span class="w"> </span><span class="nb">eval</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span>mise<span class="w"> </span>activate<span class="w"> </span>bash<span class="k">)</span><span class="s2">"</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># when done</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>$<span class="w"> </span>mise<span class="w"> </span>deactivate
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>$<span class="w"> </span>mise<span class="w"> </span>prune
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>$<span class="w"> </span>mise<span class="w"> </span>cache<span class="w"> </span>clean
+</span></code></pre></div>
+<h4 id="using-brew-and-npm">Using <code>brew</code> and <code>npm</code></h4>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>brew<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span>prek<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span>go-task<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>doxygen
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>$<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>moxygen<span class="w"> </span>-g
+</span></code></pre></div>
+<h2 id="docs">Docs</h2>
+<p>Docs are generated a first generated with <code>doxygen</code> as <code>xml</code> and then <code>moxygen</code> reads the xml to output markdown in the <code>docs/</code> folder.</p>
+<p>This repo uses reusable tasks from https://github.com/standardloop/taskfiles/</p>
 <h2 id="precommit">Precommit</h2>
 <p>This repo uses <a href="https://github.com/j178/prek">prek</a>.</p>
 <p>Please run <code>prek install</code>.</p>

@@ -2257,44 +2257,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="About">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#item" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Item
+        Docs
       </span>
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        List
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hashmap" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Hashmap
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2522,21 +2494,9 @@
 <p><a href="https://github.com/standardloop/c-collections/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/standardloop/c-collections?sort=semver" /></a> <img alt="Platform: macOS" src="https://img.shields.io/badge/platform-macOS-000000?style=flat&amp;logo=apple&amp;logoColor=white" /> <img alt="C Version" src="https://img.shields.io/badge/C_Standard-C17-00599C?logo=c&amp;logoColor=white" /></p>
 <h2 id="about">About</h2>
 <p>This repo contains my reusable datastructures all written in C released as a <code>dylib</code></p>
-<h3 id="item">Item</h3>
-<p>An <code>Item</code> is a wrapper around a <code>void</code> pointer.</p>
-<p>It looks like this</p>
-<div class="language-C highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">value</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">ItemFreeFunction</span><span class="w"> </span><span class="o">*</span><span class="n">freeFunction</span><span class="p">;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">ItemPrintFunction</span><span class="w"> </span><span class="o">*</span><span class="n">printFunction</span><span class="p">;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span><span class="w"> </span><span class="n">Item</span><span class="p">;</span>
-</span></code></pre></div>
-<p>This <code>Item</code> is the foundation of these collections present.</p>
-<h3 id="list">List</h3>
-<p>WIP</p>
-<h3 id="hashmap">Hashmap</h3>
-<p>WIP</p>
+<h2 id="docs">Docs</h2>
+<p>Docs are generated a first generated with <code>doxygen</code> as <code>xml</code> and then <code>moxygen</code> reads the xml to output markdown in the <code>docs/</code> folder.</p>
+<p>This repo uses reusable tasks from https://github.com/standardloop/taskfiles/</p>
 <h2 id="precommit">Precommit</h2>
 <p>This repo uses <a href="https://github.com/j178/prek">prek</a>.</p>
 <p>Please run <code>prek install</code>.</p>
