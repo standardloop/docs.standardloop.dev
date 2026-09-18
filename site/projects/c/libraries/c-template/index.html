@@ -18,7 +18,7 @@
         <link rel="prev" href="../c-collections/docs/">
       
       
-        <link rel="next" href="../../projects/cerver/">
+        <link rel="next" href="../c-testing/">
       
       
         
@@ -242,6 +242,8 @@
   
     
       
+      
+        
       
         
       
@@ -516,6 +518,8 @@
   
     
     
+      
+        
       
         
       
@@ -1052,6 +1056,112 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../c-testing/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-test-tube-diagonal" viewBox="0 0 24 24"><path d="M21 7 6.82 21.18a2.83 2.83 0 0 1-3.99-.01 2.83 2.83 0 0 1 0-4L17 3M16 2l6 6M12 16H4"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  c-testing
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_6" id="__nav_2_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  c-testing
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c-testing/docs/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Docs
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -2271,15 +2381,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building" class="md-nav__link">
+  <a href="#available-tasks" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Building
+        Available Tasks
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Building">
+    <nav class="md-nav" aria-label="Available Tasks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2323,6 +2433,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Releasing
+      </span>
+    </span>
+  </a>
   
 </li>
       
@@ -2422,6 +2543,8 @@
       
         
       
+        
+      
     
     
     
@@ -2467,6 +2590,8 @@
   
     
     
+      
+        
       
         
       
@@ -2561,42 +2686,45 @@
 <p>Template repo to spawn C projects from.</p>
 <h2 id="running">Running</h2>
 <p>This repo uses <a href="https://github.com/go-task/task">task</a>.</p>
-<p>Please run the default <code>task</code> to see all the avaiable <code>tasks</code></p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>task<span class="w"> </span>--list-all
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>task:<span class="w"> </span>Available<span class="w"> </span>tasks<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>project:
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>*<span class="w"> </span>default:<span class="w">                   </span>Show<span class="w"> </span>all<span class="w"> </span>avaiable<span class="w"> </span>tasks.
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>*<span class="w"> </span>test:<span class="w">                      </span>Build<span class="w"> </span>and<span class="w"> </span>Run<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>*<span class="w"> </span>release:build:<span class="w">             </span>Build<span class="w"> </span>the<span class="w"> </span>dylib.
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>*<span class="w"> </span>remote:download:<span class="w">           </span>Download<span class="w"> </span>the<span class="w"> </span>released<span class="w"> </span>dylib<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>GitHub<span class="w"> </span>release.
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>*<span class="w"> </span>remote:move:<span class="w">               </span>Move<span class="w"> </span>the<span class="w"> </span>dylib<span class="w"> </span>and<span class="w"> </span>header<span class="w"> </span>file<span class="w"> </span>into<span class="w"> </span>paths<span class="w"> </span><span class="k">for</span><span class="w"> </span>other<span class="w"> </span>programs<span class="w"> </span>to<span class="w"> </span>access.
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>*<span class="w"> </span>test:build:<span class="w">                </span>Build<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>*<span class="w"> </span>test:build-sanitize:<span class="w">       </span>Build<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>with<span class="w"> </span>address<span class="w"> </span>sanitizer<span class="w"> </span>on.
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>*<span class="w"> </span>test:leaks:<span class="w">                </span>Run<span class="w"> </span>macOS<span class="w"> </span>leaks<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>*<span class="w"> </span>test:run:<span class="w">                  </span>Run<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
+<p>Please run <code>task list</code> to see all the avaiable <code>tasks</code>.</p>
+<h2 id="available-tasks">Available Tasks</h2>
+<!-- TASKS_START -->
+
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>task:<span class="w"> </span>Available<span class="w"> </span>tasks<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>project:
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>*<span class="w"> </span>list<span class="w">                  </span>Lists<span class="w"> </span>all<span class="w"> </span>the<span class="w"> </span>tasks<span class="w"> </span>available<span class="w"> </span>to<span class="w"> </span>run.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>*<span class="w"> </span>default<span class="w">               </span>Builds<span class="w"> </span>and<span class="w"> </span>runs<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>*<span class="w"> </span>dependencies<span class="w">          </span>Downloads<span class="w"> </span>C<span class="w"> </span>program<span class="w"> </span>dependencies.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>*<span class="w"> </span>release<span class="w">               </span>Release<span class="w"> </span>the<span class="w"> </span>dylib,<span class="w"> </span>used<span class="w"> </span>by<span class="w"> </span>GitHub<span class="w"> </span>actions.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>*<span class="w"> </span>test:build<span class="w">            </span>Builds<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>*<span class="w"> </span>test:run<span class="w">              </span>Runs<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>*<span class="w"> </span>test:build-sanitize<span class="w">   </span>Builds<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program<span class="w"> </span>with<span class="w"> </span>address<span class="w"> </span>sanitizers.
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>*<span class="w"> </span>test:run-sanitize<span class="w">     </span>Runs<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program<span class="w"> </span>with<span class="w"> </span>address<span class="w"> </span>sanitizers.
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>*<span class="w"> </span>clean<span class="w">                 </span>Cleans<span class="w"> </span>binary<span class="w"> </span>files.
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>*<span class="w"> </span>fmt<span class="w">                   </span>Formats<span class="w"> </span>the<span class="w"> </span>C<span class="w"> </span>code<span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span><span class="sb">`</span>.clang-format<span class="sb">`</span><span class="w"> </span>file.
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>*<span class="w"> </span>docs<span class="w">                  </span>Generate<span class="w"> </span>docs/index.md<span class="w"> </span>and<span class="w"> </span>the<span class="w"> </span>task<span class="w"> </span>list<span class="w"> </span><span class="k">in</span><span class="w"> </span>README.md
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>*<span class="w"> </span>test:leaks<span class="w">            </span>Run<span class="w"> </span>macOS<span class="w"> </span>leaks<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>program.
 </span></code></pre></div>
-<h2 id="building">Building</h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>task<span class="w"> </span>test:build
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$<span class="w"> </span>./test
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>$<span class="w"> </span>task<span class="w"> </span>test:build-sanitize
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>$<span class="w"> </span>./test-sanitize
-</span></code></pre></div>
+<!-- TASKS_END -->
+
 <h3 id="dependencies">Dependencies</h3>
 <h4 id="using-mise">Using <code>mise</code></h4>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>mise<span class="w"> </span>install
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>$<span class="w"> </span><span class="nb">eval</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span>mise<span class="w"> </span>activate<span class="w"> </span>bash<span class="k">)</span><span class="s2">"</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># when done</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>$<span class="w"> </span>mise<span class="w"> </span>deactivate
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>$<span class="w"> </span>mise<span class="w"> </span>prune
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>$<span class="w"> </span>mise<span class="w"> </span>cache<span class="w"> </span>clean
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>mise<span class="w"> </span>install
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$<span class="w"> </span><span class="nb">eval</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span>mise<span class="w"> </span>activate<span class="w"> </span>bash<span class="k">)</span><span class="s2">"</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># when done</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>$<span class="w"> </span>mise<span class="w"> </span>deactivate
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>$<span class="w"> </span>mise<span class="w"> </span>prune
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>$<span class="w"> </span>mise<span class="w"> </span>cache<span class="w"> </span>clean
 </span></code></pre></div>
 <h4 id="using-brew-and-npm">Using <code>brew</code> and <code>npm</code></h4>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>brew<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span>prek<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span>go-task<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>doxygen
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>$<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>moxygen<span class="w"> </span>-g
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>brew<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span>prek<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span>go-task<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span>doxygen
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>$<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>moxygen<span class="w"> </span>-g
 </span></code></pre></div>
+<h2 id="releasing">Releasing</h2>
+<p>Releases are handled via GitHub Actions.</p>
 <h2 id="docs">Docs</h2>
 <p>Docs are generated a first generated with <code>doxygen</code> as <code>xml</code> and then <code>moxygen</code> reads the xml to output markdown in the <code>docs/</code> folder.</p>
 <p>This repo uses reusable tasks from https://github.com/standardloop/taskfiles/</p>
@@ -2662,13 +2790,13 @@
         
         
           
-          <a href="../../projects/cerver/" class="md-footer__link md-footer__link--next" aria-label="Next: cerver">
+          <a href="../c-testing/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                cerver
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

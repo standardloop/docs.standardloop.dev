@@ -57,6 +57,10 @@ nav = [
       { "c-template" = [
         { "Overview" = "projects/c/libraries/c-template/index.md" },
       ] },
+      { "c-testing" = [
+        { "Overview" = "projects/c/libraries/c-testing/index.md" },
+        { "Docs" = "projects/c/libraries/c-testing/docs.md" },
+      ] },
     ] },
     { "C Projects" = [
       "projects/c/projects/cerver.md",
