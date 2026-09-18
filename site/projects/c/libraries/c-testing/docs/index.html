@@ -1217,10 +1217,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#verify" class="md-nav__link">
+  <a href="#testcaseverify" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Verify
+        TestCaseVerify
       </span>
     </span>
   </a>
@@ -2487,10 +2487,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#verify" class="md-nav__link">
+  <a href="#testcaseverify" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Verify
+        TestCaseVerify
       </span>
     </span>
   </a>
@@ -2756,18 +2756,21 @@
 <h1 id="api-reference">API Reference</h1>
 <h2 id="macros">Macros</h2>
 <hr />
-<h3 id="verify">Verify</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#define Verify(run, name, condition) testing(run, name, (condition), #condition, __FILE__, __LINE__)</span>
+<h3 id="testcaseverify">TestCaseVerify</h3>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#define TestCaseVerify(run, name, condition) testing(run, name, (condition), #condition, __FILE__, __LINE__)</span>
 </span></code></pre></div>
+<p>The main point of this library, a macro for checking a test case instead of using <code>assert()</code>.</p>
 <h2 id="functions">Functions</h2>
 <hr />
 <h3 id="testinginit">TestingInit</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">TestingInit</span><span class="p">()</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">TestingInit</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></code></pre></div>
+<p>A function to Initialize a Testing Run.</p>
 <hr />
 <h3 id="testingteardown">TestingTearDown</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">TestingTearDown</span><span class="p">()</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">TestingTearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></code></pre></div>
+<p>A function to Complete and Tear Down a Testing Run.</p>
 
 
 
