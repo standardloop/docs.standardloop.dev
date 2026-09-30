@@ -4,28 +4,25 @@
         <loc>https://docs.standardloop.dev/</loc>
       </url>
       <url>
-        <loc>https://docs.standardloop.dev/projects/c/libraries/c-json/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/projects/c/libraries/c-json/docs/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/projects/c/libraries/c-util/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/projects/c/libraries/c-util/docs/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/projects/c/libraries/c-logger/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/projects/c/libraries/c-logger/docs/</loc>
+        <loc>https://docs.standardloop.dev/opensource-contributions/</loc>
       </url>
       <url>
         <loc>https://docs.standardloop.dev/projects/c/libraries/c-collections/</loc>
       </url>
       <url>
         <loc>https://docs.standardloop.dev/projects/c/libraries/c-collections/docs/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-json/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-json/docs/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-logger/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-logger/docs/</loc>
       </url>
       <url>
         <loc>https://docs.standardloop.dev/projects/c/libraries/c-template/</loc>
@@ -37,19 +34,25 @@
         <loc>https://docs.standardloop.dev/projects/c/libraries/c-testing/docs/</loc>
       </url>
       <url>
-        <loc>https://docs.standardloop.dev/projects/c/projects/cerver/</loc>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-util/</loc>
       </url>
       <url>
-        <loc>https://docs.standardloop.dev/projects/c/projects/seashell/</loc>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-util/docs/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-yaml/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/projects/c/libraries/c-yaml/docs/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/projects/c/projects/cerver/</loc>
       </url>
       <url>
         <loc>https://docs.standardloop.dev/projects/c/projects/do/</loc>
       </url>
       <url>
-        <loc>https://docs.standardloop.dev/projects/sre/playground/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/projects/sre/taskfiles/</loc>
+        <loc>https://docs.standardloop.dev/projects/c/projects/seashell/</loc>
       </url>
       <url>
         <loc>https://docs.standardloop.dev/projects/js/castlewars/</loc>
@@ -67,19 +70,10 @@
         <loc>https://docs.standardloop.dev/projects/misc/knowledge-transfer/</loc>
       </url>
       <url>
-        <loc>https://docs.standardloop.dev/tech-articles/kind/intro-to-kind/</loc>
+        <loc>https://docs.standardloop.dev/projects/sre/playground/</loc>
       </url>
       <url>
-        <loc>https://docs.standardloop.dev/tech-articles/kind/kind-gateway-api/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/tech-articles/taskfile/rancher/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/tech-articles/taskfile/multicluster-kind/</loc>
-      </url>
-      <url>
-        <loc>https://docs.standardloop.dev/tech-articles/taskfile/helm/</loc>
+        <loc>https://docs.standardloop.dev/projects/sre/taskfiles/</loc>
       </url>
       <url>
         <loc>https://docs.standardloop.dev/tech-articles/c/dylib-on-macos/</loc>
@@ -91,6 +85,18 @@
         <loc>https://docs.standardloop.dev/tech-articles/config/oh-my-zsh-to-starship/</loc>
       </url>
       <url>
-        <loc>https://docs.standardloop.dev/opensource-contributions/</loc>
+        <loc>https://docs.standardloop.dev/tech-articles/kind/intro-to-kind/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/tech-articles/kind/kind-gateway-api/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/tech-articles/taskfile/helm/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/tech-articles/taskfile/multicluster-kind/</loc>
+      </url>
+      <url>
+        <loc>https://docs.standardloop.dev/tech-articles/taskfile/rancher/</loc>
       </url>
 </urlset>
