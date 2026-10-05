@@ -104,7 +104,15 @@ nav = [
     ] },
   ] },
   { "Open Source Contributions" = "opensource-contributions/index.md" },
+  # { "Casual" = [
+  #   { "Hiking" = [
+  #     "casual/14ers.md",
+  #     "casual/baiyue.md",
+  #   ] },
+  #   { "Video Games" = "casual/video-games.md" },
+  # ] },
 ]
+
 # { "Hire Me" = "hire-me.md" },
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -403,3 +411,5 @@ anchor_linenums = true
 pygments_lang_class = true
 
 [project.markdown_extensions.pymdownx.superfences]
+
+# [project.plugins.awesome-nav]

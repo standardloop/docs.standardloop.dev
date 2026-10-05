@@ -17,6 +17,13 @@ tasks:
     cmds:
       - zensical serve
 
+  # chinese:
+  #   cmds:
+  # - cp ../chinese/obsidian/chinese/Single\ Character/*.md docs/chinese/
+  # - cp ../chinese/obsidian/chinese/Multi\ Character/*.md docs/chinese/
+  # - ln -s ../chinese/obsidian/chinese/Single\ Character/*.md docs/chinese/single
+  # - ln -s ../chinese/obsidian/chinese/Multi\ Character/*.md docs/chinese/multi
+
   clean:
     cmds:
       - rm -rf ./.cache
