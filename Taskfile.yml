@@ -17,6 +17,8 @@ tasks:
     cmds:
       - zensical serve
 
+  # renovate: RENOVATE_TOKEN=${GITHUB_TOKEN} npx renovate --platform=local --dry-run=lookup
+
   # chinese:
   #   cmds:
   # - cp ../chinese/obsidian/chinese/Single\ Character/*.md docs/chinese/
