@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -16,6 +18,7 @@
       
       
       
+      
         <link rel="prev" href="../">
       
       
@@ -26,7 +29,7 @@
       
       
       <link rel="icon" href="../../../../../images/favicon.png">
-      <meta name="generator" content="zensical-0.1.1">
+      <meta name="generator" content="zensical-0.1.3">
     
     
       
@@ -37,12 +40,13 @@
       
         
       
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/modern/main.ebb7f775.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/modern/main.e2cf241e.min.css">
       
         
           
         
         <link rel="stylesheet" href="../../../../../assets/stylesheets/modern/palette.b60ce83d.min.css">
+      
       
       
 
@@ -1565,10 +1569,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamltokeninit" class="md-nav__link">
+  <a href="#yamllex" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLTokenInit
+        YAMLLex
       </span>
     </span>
   </a>
@@ -1576,10 +1580,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamltokentypetostring" class="md-nav__link">
+  <a href="#yamltokenfree" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLTokenTypeToString
+        YAMLTokenFree
       </span>
     </span>
   </a>
@@ -1598,10 +1602,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamllex" class="md-nav__link">
+  <a href="#yamltokeninit" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLLex
+        YAMLTokenInit
       </span>
     </span>
   </a>
@@ -1609,10 +1613,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamltokenfree" class="md-nav__link">
+  <a href="#yamltokentypetostring" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLTokenFree
+        YAMLTokenTypeToString
       </span>
     </span>
   </a>
@@ -1914,6 +1918,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#quoted_scalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        quoted_scalar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#state" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2140,6 +2155,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         literal
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quoted" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        quoted
       </span>
     </span>
   </a>
@@ -3787,10 +3813,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamltokeninit" class="md-nav__link">
+  <a href="#yamllex" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLTokenInit
+        YAMLLex
       </span>
     </span>
   </a>
@@ -3798,10 +3824,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamltokentypetostring" class="md-nav__link">
+  <a href="#yamltokenfree" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLTokenTypeToString
+        YAMLTokenFree
       </span>
     </span>
   </a>
@@ -3820,10 +3846,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamllex" class="md-nav__link">
+  <a href="#yamltokeninit" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLLex
+        YAMLTokenInit
       </span>
     </span>
   </a>
@@ -3831,10 +3857,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#yamltokenfree" class="md-nav__link">
+  <a href="#yamltokentypetostring" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        YAMLTokenFree
+        YAMLTokenTypeToString
       </span>
     </span>
   </a>
@@ -4136,6 +4162,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#quoted_scalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        quoted_scalar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#state" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -4362,6 +4399,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         literal
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quoted" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        quoted
       </span>
     </span>
   </a>
@@ -5047,24 +5095,24 @@
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">DynString</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">DynStringDefaultInit</span><span class="p">()</span>
 </span></code></pre></div>
 <hr />
-<h3 id="yamltokeninit">YAMLTokenInit</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">YAMLTokenInit</span><span class="p">(</span><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLTokenType</span><span class="p">,</span><span class="w"> </span><span class="n">u_int32_t</span><span class="p">,</span><span class="w"> </span><span class="n">u_int32_t</span><span class="p">,</span><span class="w"> </span><span class="n">u_int32_t</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">)</span>
+<h3 id="yamllex">YAMLLex</h3>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">YAMLLex</span><span class="p">(</span><span class="n">YAMLLexer</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">lexer</span><span class="p">)</span>
 </span></code></pre></div>
 <hr />
-<h3 id="yamltokentypetostring">YAMLTokenTypeToString</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">YAMLTokenTypeToString</span><span class="p">(</span><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLTokenType</span><span class="p">)</span>
+<h3 id="yamltokenfree">YAMLTokenFree</h3>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">YAMLTokenFree</span><span class="p">(</span><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">token</span><span class="p">)</span>
 </span></code></pre></div>
 <hr />
 <h3 id="yamltokenprint">YAMLTokenPrint</h3>
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">YAMLTokenPrint</span><span class="p">(</span><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="p">)</span>
 </span></code></pre></div>
 <hr />
-<h3 id="yamllex">YAMLLex</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">YAMLLex</span><span class="p">(</span><span class="n">YAMLLexer</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">lexer</span><span class="p">)</span>
+<h3 id="yamltokeninit">YAMLTokenInit</h3>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">YAMLTokenInit</span><span class="p">(</span><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLTokenType</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">u_int32_t</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="n">u_int32_t</span><span class="w"> </span><span class="n">end</span><span class="p">,</span><span class="w"> </span><span class="n">u_int32_t</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">literal</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">quoted</span><span class="p">)</span>
 </span></code></pre></div>
 <hr />
-<h3 id="yamltokenfree">YAMLTokenFree</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">YAMLTokenFree</span><span class="p">(</span><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">token</span><span class="p">)</span>
+<h3 id="yamltokentypetostring">YAMLTokenTypeToString</h3>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">YAMLTokenTypeToString</span><span class="p">(</span><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLTokenType</span><span class="p">)</span>
 </span></code></pre></div>
 <hr />
 <h3 id="yamllexerinit">YAMLLexerInit</h3>
@@ -5196,6 +5244,11 @@
 <td></td>
 </tr>
 <tr>
+<td><code>bool</code></td>
+<td><a href="#quoted_scalar"><code>quoted_scalar</code></a></td>
+<td></td>
+</tr>
+<tr>
 <td><code>enum YAMLLexerState</code></td>
 <td><a href="#state"><code>state</code></a></td>
 <td></td>
@@ -5256,31 +5309,35 @@
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">eof_reached</span>
 </span></code></pre></div>
 <hr />
+<h4 id="quoted_scalar">quoted_scalar</h4>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">quoted_scalar</span>
+</span></code></pre></div>
+<hr />
 <h4 id="state">state</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLLexerState</span><span class="w"> </span><span class="n">state</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLLexerState</span><span class="w"> </span><span class="n">state</span>
 </span></code></pre></div>
 <hr />
 <h4 id="flow_stack">flow_stack</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">List</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">flow_stack</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="n">List</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">flow_stack</span>
 </span></code></pre></div>
 <hr />
 <h4 id="indent_stack">indent_stack</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="n">List</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">indent_stack</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="n">List</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">indent_stack</span>
 </span></code></pre></div>
 <hr />
 <h4 id="this_indent_space_count">this_indent_space_count</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="n">u_int8_t</span><span class="w"> </span><span class="n">this_indent_space_count</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="n">u_int8_t</span><span class="w"> </span><span class="n">this_indent_space_count</span>
 </span></code></pre></div>
 <hr />
 <h4 id="space_count">space_count</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">space_count</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">space_count</span>
 </span></code></pre></div>
 <hr />
 <h4 id="block_scalar_options">block_scalar_options</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">YAMLLexer</span><span class="o">::</span><span class="n">block_scalar_options_s</span><span class="w"> </span><span class="n">block_scalar_options</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">YAMLLexer</span><span class="o">::</span><span class="n">block_scalar_options_s</span><span class="w"> </span><span class="n">block_scalar_options</span>
 </span></code></pre></div>
 <h2 id="block_scalar_options_s">block_scalar_options_s</h2>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">block_scalar_options_s</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">block_scalar_options_s</span>
 </span></code></pre></div>
 <h3 id="public-attributes_2">Public Attributes</h3>
 <table>
@@ -5316,22 +5373,22 @@
 </table>
 <hr />
 <h4 id="enabled">enabled</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span>
 </span></code></pre></div>
 <hr />
 <h4 id="style">style</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarStyle</span><span class="w"> </span><span class="n">style</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarStyle</span><span class="w"> </span><span class="n">style</span>
 </span></code></pre></div>
 <hr />
 <h4 id="chomping">chomping</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarChomping</span><span class="w"> </span><span class="n">chomping</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarChomping</span><span class="w"> </span><span class="n">chomping</span>
 </span></code></pre></div>
 <hr />
 <h4 id="explicit_indent">explicit_indent</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="kt">uint8_t</span><span class="w"> </span><span class="n">explicit_indent</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="kt">uint8_t</span><span class="w"> </span><span class="n">explicit_indent</span>
 </span></code></pre></div>
 <h2 id="yamltoken">YAMLToken</h2>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">YAMLToken</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">YAMLToken</span>
 </span></code></pre></div>
 <h3 id="public-attributes_3">Public Attributes</h3>
 <table>
@@ -5368,30 +5425,39 @@
 <td><a href="#literal"><code>literal</code></a></td>
 <td></td>
 </tr>
+<tr>
+<td><code>bool</code></td>
+<td><a href="#quoted"><code>quoted</code></a></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <hr />
 <h4 id="type">type</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLTokenType</span><span class="w"> </span><span class="n">type</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">YAMLTokenType</span><span class="w"> </span><span class="n">type</span>
 </span></code></pre></div>
 <hr />
 <h4 id="start">start</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="n">u_int32_t</span><span class="w"> </span><span class="n">start</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="n">u_int32_t</span><span class="w"> </span><span class="n">start</span>
 </span></code></pre></div>
 <hr />
 <h4 id="end">end</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="n">u_int32_t</span><span class="w"> </span><span class="n">end</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="n">u_int32_t</span><span class="w"> </span><span class="n">end</span>
 </span></code></pre></div>
 <hr />
 <h4 id="line_1">line</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="n">u_int32_t</span><span class="w"> </span><span class="n">line</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="n">u_int32_t</span><span class="w"> </span><span class="n">line</span>
 </span></code></pre></div>
 <hr />
 <h4 id="literal">literal</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">literal</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">literal</span>
+</span></code></pre></div>
+<hr />
+<h4 id="quoted">quoted</h4>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">quoted</span>
 </span></code></pre></div>
 <h2 id="yamlparser">YAMLParser</h2>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">YAMLParser</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">YAMLParser</span>
 </span></code></pre></div>
 <h3 id="public-attributes_4">Public Attributes</h3>
 <table>
@@ -5427,22 +5493,22 @@
 </table>
 <hr />
 <h4 id="lexer">lexer</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="n">YAMLLexer</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">lexer</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="n">YAMLLexer</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">lexer</span>
 </span></code></pre></div>
 <hr />
 <h4 id="current_token">current_token</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">current_token</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">current_token</span>
 </span></code></pre></div>
 <hr />
 <h4 id="peek_token">peek_token</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">peek_token</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="n">YAMLToken</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">peek_token</span>
 </span></code></pre></div>
 <hr />
 <h4 id="error_message">error_message</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">error_message</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">error_message</span>
 </span></code></pre></div>
 <h2 id="block_scalar_options_s_1">block_scalar_options_s</h2>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">block_scalar_options_s</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">block_scalar_options_s</span>
 </span></code></pre></div>
 <h3 id="public-attributes_5">Public Attributes</h3>
 <table>
@@ -5478,19 +5544,19 @@
 </table>
 <hr />
 <h4 id="enabled_1">enabled</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span>
 </span></code></pre></div>
 <hr />
 <h4 id="style_1">style</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarStyle</span><span class="w"> </span><span class="n">style</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarStyle</span><span class="w"> </span><span class="n">style</span>
 </span></code></pre></div>
 <hr />
 <h4 id="chomping_1">chomping</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarChomping</span><span class="w"> </span><span class="n">chomping</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a><span class="k">enum</span><span class="w"> </span><span class="nc">BlockScalarChomping</span><span class="w"> </span><span class="n">chomping</span>
 </span></code></pre></div>
 <hr />
 <h4 id="explicit_indent_1">explicit_indent</h4>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a><span class="kt">uint8_t</span><span class="w"> </span><span class="n">explicit_indent</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a><span class="kt">uint8_t</span><span class="w"> </span><span class="n">explicit_indent</span>
 </span></code></pre></div>
 
 
@@ -5644,7 +5710,8 @@
       <script id="__config" type="application/json">{"annotate":null,"base":"../../../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","header.autohide","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight"],"redirect":null,"search":"../../../../../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.3cb411a8.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.9e76c64c.min.js"></script>
+      
       
     
   </body>
