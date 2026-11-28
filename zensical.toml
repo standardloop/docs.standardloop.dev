@@ -65,6 +65,10 @@ nav = [
         { "Overview" = "projects/c/libraries/c-yaml/index.md" },
         { "Docs" = "projects/c/libraries/c-yaml/docs.md" },
       ] },
+      { "c-dynstring" = [
+        { "Overview" = "projects/c/libraries/c-dynstring/index.md" },
+        { "Docs" = "projects/c/libraries/c-dynstring/docs.md" },
+      ] },
     ] },
     { "C Projects" = [
       "projects/c/projects/cerver.md",
